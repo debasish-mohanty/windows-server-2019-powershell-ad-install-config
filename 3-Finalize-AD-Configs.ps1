@@ -11,12 +11,12 @@
 
 # Network Variables
 
-$globalsubnet = '192.168.1.0/24' # Global Subnet will be used in DNS Reverse Record and AD Sites and Services Subnet
-$subnetlocation = 'Sydney'
+$globalsubnet = '192.168.10.0/24' # Global Subnet will be used in DNS Reverse Record and AD Sites and Services Subnet
+$subnetlocation = 'India'
 
 # NTP Variables
-$ntpserver1 = '0.au.pool.ntp.org'
-$ntpserver2 = '1.au.pool.ntp.org'
+$ntpserver1 = '0.in.pool.ntp.org'
+$ntpserver2 = '1.in.pool.ntp.org'
 
 #------------
 #- Settings -
@@ -37,7 +37,7 @@ Set-DnsServerScavenging -ScavengingState $true -ScavengingInterval 7.00:00:00 -V
 
 Set-DnsServerZoneAging vlab.local -Aging $true -RefreshInterval 7.00:00:00 -NoRefreshInterval 7.00:00:00 -Verbose
 
-Set-DnsServerZoneAging 1.168.192.in-addr.arpa -Aging $true -RefreshInterval 7.00:00:00 -NoRefreshInterval 7.00:00:00 -Verbose
+Set-DnsServerZoneAging 10.168.192.in-addr.arpa -Aging $true -RefreshInterval 7.00:00:00 -NoRefreshInterval 7.00:00:00 -Verbose
 
 Get-DnsServerScavenging
 
