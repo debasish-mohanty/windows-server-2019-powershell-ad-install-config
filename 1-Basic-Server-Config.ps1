@@ -11,10 +11,10 @@
 
 # Network Variables
 $ethalias = 'Ethernet0'
-$ethipaddress = '192.168.1.222'
+$ethipaddress = '192.168.10.5'
 $ethprefixlength = '24'
-$ethdefaultgw = '192.168.1.1'
-$ethdns = '8.8.8.8' # for multiple DNS you can append DNS entries with comma's
+$ethdefaultgw = ''
+$ethdns = '127.0.0.1' # for multiple DNS you can append DNS entries with comma's
 
 # Remote Desktop Variable
 $enablerdp = 'yes' # to enable RDP, set this variable to yes. to disable RDP, set this variable to no
@@ -23,7 +23,7 @@ $enablerdp = 'yes' # to enable RDP, set this variable to yes. to disable RDP, se
 $disableiesecconfig = 'yes' # to disable IE Enhanced Security Configuration, set this variable to yes. to leave enabled, set this variable to no
 
 # Hostname Variables
-$computername = 'SERVERDC1'
+$computername = 'DC'
 
 #------------
 #- Settings -
