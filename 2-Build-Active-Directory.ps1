@@ -10,7 +10,7 @@
 #-------------
 
 # Active Directory Variables
-$domainname = 'vlab.local'
+$domainname = 'digitaldebun.lab'
 
 #------------
 #- Settings -
